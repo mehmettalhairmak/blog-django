@@ -10,4 +10,4 @@ def index(request):
 
 def post(request, pk):
     posts = Post.objects.get(id=pk)
-    return render(request, 'post.html', {'posts': posts})
+    return render(request, 'posts.html', {'posts': posts})
